@@ -33,7 +33,7 @@ export function fetchSingleProduct(productId) {
       dispatch(setStatus(STATUSES.LOADING));
       try {
         console.log(productId);
-        const response = await axios.get(`http://localhost:4040/api/product/getSingleProduct/${productId}`);
+        const response = await axios.get(`https://shopex-yfau.onrender.com/api/product/getSingleProduct/${productId}`);
         const newData = response.data;
         dispatch(setProduct(newData));
         dispatch(setStatus(STATUSES.IDLE));
