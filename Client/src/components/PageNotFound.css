@@ -1,0 +1,35 @@
+.page-not-found-cont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+@keyframes moving {
+    0% {
+      transform: translateY(2%);
+    }
+    25% {
+      transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(-2%);
+    }
+
+    75%{
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(2%);
+    }
+  }
+
+.page-not-found-cont img{
+    width: 70%;
+    height: 80%;
+    animation: moving 10s linear infinite;
+}

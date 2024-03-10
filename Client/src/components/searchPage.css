@@ -1,0 +1,101 @@
+.search-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.search-container-left{
+    width: 25%;
+    background-color: antiquewhite;
+}
+
+.search-container-right{
+    width: 75%;
+}
+
+.product-name{
+    text-decoration: none;
+    color: initial;
+}
+
+.search-product{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(208, 202, 202);
+}
+
+.search-product-left{
+    margin-left: 1rem;
+    width: 8rem;
+    height: 10rem;
+}
+
+.search-product-middle{
+    width: 40rem;
+    padding: 1rem;
+   
+}
+
+.search-product-middle-name{
+    font-size: 16px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    width: 100%
+}
+
+.search-product-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.search-product-middle-rating{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.search-product-rating-star{
+    margin-right: 0.5rem;
+}
+
+.product-no-rating{
+    margin-left: 0.5rem;
+}
+
+.product-description{
+    margin-top: 1.2rem;
+    font-size: 12px;
+    color: gray;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    width: 100%
+}
+
+.search-product-right{
+    display: flex;
+    width: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-product-right-price{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.serach-product-right-offer{
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: green;
+    font-weight: 500;
+}

@@ -1,0 +1,120 @@
+@keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.verify-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #DDF1FC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify-box{
+    width: 85%;
+    height: 70%;
+    background-color: #F9F9F9;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow:  20px 20px 40px #cbdee8,
+             -20px -20px 40px #efffff;
+    /* animation: fadeInTop 0.7s ease-in-out forwards; */
+}
+
+.verify-box h1{
+    font-weight: 600;
+    animation: fadeInTop 0.7s ease-in-out forwards;
+}
+
+.verify-logo{
+    color: #7EAED2 !important;
+    background-color: #DDF1FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    animation: fadeInTop 0.7s ease-in-out forwards;
+}
+
+.lock-logo{
+    width: 3rem !important;
+    height: 3rem !important;
+    animation: fadeInTop 0.7s ease-in-out forwards;
+}
+
+.verify-p{
+
+    font-size: 16px;
+    animation: fadeInTop 0.7s ease-in-out forwards;
+}
+
+.confirm-button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #7EAED2;
+    color: #DDF1FC;
+    animation: fadeInTop 0.7s ease-in-out forwards;
+}
+
+.confirm-button:hover{
+    transform: scale(1.05);
+    background-color: #DDF1FC;
+    color: #7EAED2;
+    border: 1px solid #7EAED2;
+}
+
+.userInput{
+   width: 100%;
+   height: 10%;
+   margin-left: 1rem;
+   margin-top: -1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   animation: fadeInTopic 0.7s ease-in-out forwards;
+}
+
+input{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #F9F9F9;
+    border: 1px solid #7EAED2;
+    animation: fadeInTop 0.7s ease-in-out forwards;
+}
+
+.timer{
+    animation: fadeInTop 0.7s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+    .verify-box{
+        height: 50%;
+    }
+}
+
+
+
