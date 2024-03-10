@@ -20,7 +20,7 @@ function CreateCategory() {
     }
 
     try{
-        const response = await axios.post('http://localhost:4040/api/category/createCategory', data);
+        const response = await axios.post('https://shopex-yfau.onrender.com/api/category/createCategory', data);
         toast.success("Product Created Succesfully");
         console.log(response.data);
     }catch (error) {

@@ -35,7 +35,7 @@ function Login() {
         const userEmail = user.email;
         console.log(user)
 
-        const response = await axios.post(`http://localhost:4040/api/auth/google-login`,{userEmail}, { withCredentials: true });
+        const response = await axios.post(`https://shopex-yfau.onrender.com/api/auth/google-login`,{userEmail}, { withCredentials: true });
         console.log("reached here");
         console.log(response);
         toast.success('Registration successful!');
@@ -55,7 +55,7 @@ function Login() {
       event.preventDefault();
   
       try {
-        await axios.post(`http://localhost:4040/api/auth/forgot-password/${email}`);
+        await axios.post(`https://shopex-yfau.onrender.com/api/auth/forgot-password/${email}`);
         toast.success("Email has been succesfully sent");
       } catch (error) {
         if (error.response && error.response.data && error.response.data.error) {
@@ -82,7 +82,7 @@ function Login() {
       }
   
       try {
-        const response = await axios.post('http://localhost:4040/api/auth/login', userData, { withCredentials: true });
+        const response = await axios.post('https://shopex-yfau.onrender.com/api/auth/login', userData, { withCredentials: true });
         console.log("reached here");
         console.log(response);
         toast.success('login successful!');

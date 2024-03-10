@@ -30,7 +30,7 @@ export function fetchProducts() {
     return async function fetchProductThunk(dispatch, getState) {
       dispatch(setStatus(STATUSES.LOADING));
       try {
-        const response = await axios.get('https://shopex-yfau.onrender.com/product/getProducts');
+        const response = await axios.get('https://shopex-yfau.onrender.com/api/product/getProducts');
         const newData = response.data;
         dispatch(setProducts(newData));
         dispatch(setStatus(STATUSES.IDLE));

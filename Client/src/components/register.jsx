@@ -34,7 +34,7 @@ function register() {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       const response = await axios.post(
-        'http://localhost:4040/api/auth/google-register',
+        'https://shopex-yfau.onrender.com/api/auth/google-register',
         user,
         { withCredentials: true }
       );
@@ -67,7 +67,7 @@ function register() {
     };
     try {
       const response = await axios.post(
-        'http://localhost:4040/api/auth/register',
+        'https://shopex-yfau.onrender.com/api/auth/register',
         userData
       );
       toast.success('Registration successful!');
@@ -118,7 +118,7 @@ function register() {
     };
     try {
       const response = await axios.post(
-        'http://localhost:4040/api/auth/register',
+        'https://shopex-yfau.onrender.com/api/auth/register',
         userData
       );
       toast.success('Registration successful!');

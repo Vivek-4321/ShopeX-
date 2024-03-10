@@ -41,7 +41,7 @@ function CreateProduct() {
         imageUrls: [...imageUrls],
       }
 
-      const response = await axios.post("http://localhost:4040/api/product/createProduct", data);
+      const response = await axios.post("https://shopex-yfau.onrender.com/api/product/createProduct", data);
       console.log(response.data);
       toast.success("Product is succesfully created !");
       

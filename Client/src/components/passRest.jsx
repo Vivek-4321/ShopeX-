@@ -44,7 +44,7 @@ function PasswordReset() {
         try {
             console.log("reached here...")
             console.log(token);
-            await axios.post(`http://localhost:4040/api/auth/reset-password?token=${token}`, { password }, {withCredentials: true});
+            await axios.post(`https://shopex-yfau.onrender.com/api/auth/reset-password?token=${token}`, { password }, {withCredentials: true});
             navigate('/api/home');
             console.log(message);
           } catch (error) {

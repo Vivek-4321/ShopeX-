@@ -31,7 +31,7 @@ function CreateOffer() {
 
     try{
         console.log(offer);
-        const response = await axios.post(`http://localhost:4040/api/product/updateOffer/${selectedProductId}`, offer);
+        const response = await axios.post(`https://shopex-yfau.onrender.com/api/product/updateOffer/${selectedProductId}`, offer);
         if(response){
             toast.success("succesfull......");
         }
